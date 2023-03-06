@@ -1,0 +1,77 @@
+.taskCardContainer {
+  width: 100%;
+  background: var(--gray-500);
+  display: flex;
+  padding: 1rem;
+  border-radius: 8px;
+  border: 1px solid var(--gray-400);
+  align-items: flex-start;
+  justify-content: flex-start;
+  margin-bottom: 0.75rem;
+}
+
+.defaultText {
+  padding: 0 1rem;
+  margin-top: 0.2rem;
+  color: var(--gray-100);
+  font-size: 0.875rem;
+  width: 100%;
+}
+
+.doneText {
+  padding: 0 1rem;
+  margin-top: 0.2rem;
+  color: var(--gray-300);
+  font-size: 0.875rem;
+  width: 100%;
+  text-decoration: line-through;
+}
+
+.customCheckboxUnchecked {
+  margin-top: 0.2rem;
+  height: 1.2rem;
+  width: 1.3rem;
+  background: transparent;
+  border-radius: 100%;
+  border: 1px solid var(--blue);
+}
+
+.customCheckboxUnchecked:hover {
+  border-color: var(--blue-dark);
+  transition: border-color 0.1s;
+}
+
+.customCheckboxChecked {
+  margin-top: 0.2rem;
+  height: 1.2rem;
+  width: 1.3rem;
+  background: var(--purple-dark);
+  border-radius: 100%;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.customCheckboxChecked:hover {
+  background: var(--purple);
+  transition: background-color 0.1s;
+}
+
+.customCheckboxChecked::before  {
+  content: "✓";
+}
+
+.taskCardContainer svg {
+  width: 2rem;
+  height: 2rem;
+  padding: 4px;
+  border-radius: 4px;
+}
+
+.taskCardContainer svg:hover {
+  background: var(--gray-400);
+  color: var(--danger);
+  
+  transition: background-color 0.1s, color 0.1s;
+}
